@@ -113,11 +113,31 @@
     100%{
         transform: rotate(0deg);
     }
+    /* IN ALTERNATIVA
+        0%{ transform: rotate(1turn) }
+    */
 }
 
 .ex-11-icon {
     font-size: 60px;
 }
+
+.ex-11-icon:hover{
+    animation-name: giro-orario;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes giro-orario{
+    0%  {
+        transform: rotate(0deg);
+    }
+    85%{
+        transform: rotate(270deg);
+    }
+}
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
